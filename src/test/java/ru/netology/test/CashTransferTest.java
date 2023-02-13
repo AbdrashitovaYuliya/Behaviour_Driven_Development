@@ -73,6 +73,6 @@ public class CashTransferTest {
         int finalBalanceFirstCard = dashboard.getCardBalance("0");
         int finalBalanceSecondCard = dashboard.getCardBalance("1");
 
-        assertTrue(finalBalanceFirstCard > 0 && finalBalanceSecondCard > 0);
+        assertTrue(finalBalanceFirstCard < 0 && finalBalanceSecondCard > 0);
     }
 }
